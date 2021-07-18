@@ -47,7 +47,7 @@ options:
   token:
     description:
       - Terraform Cloud/Enterprise API token
-      - Supports [terraform-credentials-env](https://github.com/apparentlymart/terraform-credentials-env)-compatible environment variable (e.g. `TF_TOKEN_app_terraform_io`)
+      - Supports [terraform-credentials-env](https://github.com/apparentlymart/terraform-credentials-env)-compatible environment variable
       - Supports automatic fallback to keyring item (e.g. `app.terraform.io token`)
     type: string
     vars:

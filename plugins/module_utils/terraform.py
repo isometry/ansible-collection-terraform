@@ -1,5 +1,7 @@
 from __future__ import (absolute_import, division, print_function)
 
+from ansible.errors import AnsibleError
+
 from functools import cache
 from requests import Session
 from requests.auth import AuthBase
@@ -22,7 +24,7 @@ class TfeAuth(AuthBase):
             except ImportError:
                 pass
         if token is None:
-            raise AnsibleLookupError("API token must be specified for TFE lookup")
+            raise AnsibleError("API token must be specified for TFE lookup")
 
         self.token = token
 
