@@ -1,0 +1,6 @@
+requires_ansible: ">=2.9"
+
+plugin_routing:
+  lookup:
+    terraform:
+      redirect: isometry.terraform.output

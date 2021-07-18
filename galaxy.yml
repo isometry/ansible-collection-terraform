@@ -1,0 +1,25 @@
+namespace: isometry
+name: terraform
+version: 1.0.0
+authors:
+  - Robin Breathe <robin@isometry.net> (just.breathe.io)
+
+description: streamline interaction with terraform outputs
+readme: README.md
+
+license:
+  - MIT
+
+tags:
+  - terraform
+
+dependencies: {}
+
+repository: https://github.com/isometry/ansible-collection-terraform
+issues: https://github.com/isometry/ansible-collection-terraform/issues
+
+# A list of file glob-like patterns used to filter any files or directories that should not be included in the build
+# artifact. A pattern is matched from the relative path of the file or directory of the collection directory. This
+# uses 'fnmatch' to match the files or directories. Some directories and files like 'galaxy.yml', '*.pyc', '*.retry',
+# and '.git' are always filtered
+build_ignore: []
